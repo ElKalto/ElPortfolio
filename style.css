@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2{
+    color: white;
+  }
+  
+  body {
+    background-color: rgb(42, 165, 91);
+    font-family: Arial, sans-serif;
+  }
+  
+  .contenedor-maestro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .encabezado {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+    height: 2rem;
+    right: -100%;
+    position: fixed;
+    z-index: 1;
+    animation: mostrarMenu 1s forwards;
+  }
+  
+  @keyframes mostrarMenu {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  
+  .abreviatura {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .letra-I {
+    color: rgb(10, 126, 51);
+  }
+  
+  .letra-AG {
+    color: rgb(13, 0, 255);
+  }
+  
+  .menu {
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .menu ol {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-right: 1rem;
+    padding: 0.3rem;
+    background-color: yellow;
+    cursor: pointer;
+    text-decoration: none;  
+    border-radius: 1rem;
+    border: rgb(255, 170, 0) solid 2px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu li:hover {
+    background-color: rgb(186, 186, 8);
+  }
+  
+  .menu a{
+    text-decoration: none;
+  }
+  
+  .home,
+  .about-me,
+  .projects,
+  .contact {
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .home {
+    background-color: brown;
+  }
+  
+  .encabezado-home{  
+    margin-top: 2rem;
+  }
+  
+  .contenedor-home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(42, 165, 91);
+    margin-top: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .foto-home img {
+    width: 60%;
+    height: auto;
+    margin-left: 3.5rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    border: rgb(255, 170, 0) solid 4px;
+  }
+  
+  .texto-home p{
+    text-align: center;
+    color: white;
+    height: auto;
+    padding: 1rem;
+    background-color: #2858e8;
+  }
+  
+  .texto-home h2{
+    text-align: center;
+    color: white;
+    height: auto;
+    padding: 1rem;
+    background-color: #312599;
+  }
+  
+  .about-me{
+    background-color: greenyellow;
+  }
+  
+  .encabezado-about-me{
+    margin-top: 2rem;
+  }
+  
+  .contenedor-about-me {
+    background-color: brown;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .foto-about-me img{
+    width: 70%;
+    height: auto;
+    margin-left: 3rem;
+    border-radius: 1rem;
+    border: rgb(255, 170, 0) solid 4px;
+  }
+  
+  .texto-about-me{
+    text-align: center;
+    color: white;
+    height: auto;
+    padding: 2rem;
+    background-color: #312599;
+  }
+  
+  .texto-about-me li{
+    list-style-type: none;
+  }
+  
+  .encabezado-about-me{
+    margin-top: 2rem;
+  }
+  
+  .projects {
+    background-color: green;
+  }
+  
+  .contenedor-projects {
+    background-color: greenyellow;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .encabezado-projects{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .textos-projects{
+    display: none;
+  }
+  
+  .imagen-projects {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .video-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .descripcion-projects{
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .contact {
+    background-color: rgb(47, 255, 130);
+  }
+  
+  .encabezado-contact{
+    margin-top: 4rem;
+  }
+  
+  .textos-contact{
+  display: none;
+  }
+  
+  .contenedor-contact {
+    background-color: rgb(47, 172, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+  }
+  
+  .icono1,
+  .icono2,
+  .icono3{
+  display: none;
+  }
+  
+  .imagen-contacto1,
+  .imagen-contacto2,
+  .imagen-contacto3
+  {
+  
+  }
+  
+  .descripcion-contacto{
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+  
+    .foto-home {
+      margin-left: 5rem;
+    }
+  
+    .texto-home{
+      margin-left: 3rem;
+    }
+  
+    .contenedor-about-me{
+      
+    }
+  
+    .encabezado-about-me{
+      margin-left: 20rem;
+    }
+  
+    .foto-about-me{
+      padding-left: 20rem;
+    }
+  
+    .texto-about-me{
+      margin-left: 20rem; 
+    }
+    
+    .contenedor-projects {
+      display: flex;
+      flex-direction: column;
+      margin-left:-14%;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+    
+    .contenedor-contact {
+      margin-left:-14%;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+    
+    .imagenes-contacto{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contenedor-maestro {
+      max-width: 1200px;
+    }
+  
+    .contenedor-home {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .contenedor-about-me {
+      display: flex;
+      flex-direction: column;
+      margin-left:-14%;
+      justify-content: center;
+      width: 100vw;
+    }
+  
+    .foto-about-me{
+      margin-left: 8rem;
+    }
+    
+    .contenedor-projects {
+      display: flex;
+      flex-direction: column;
+      margin-left:-14%;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+    
+    .contenedor-contact {
+      margin-left:-14%;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+    
+    .imagenes-contacto{
+      display: flex;
+      flex-direction: row;
+    }
+  
+  }
+  
