@@ -255,13 +255,6 @@
   display: none;
   }
   
-  .imagen-contacto1,
-  .imagen-contacto2,
-  .imagen-contacto3
-  {
-  
-  }
-  
   .descripcion-contacto{
     text-align: center;
   }
@@ -274,10 +267,6 @@
   
     .texto-home{
       margin-left: 3rem;
-    }
-  
-    .contenedor-about-me{
-      
     }
   
     .encabezado-about-me{
